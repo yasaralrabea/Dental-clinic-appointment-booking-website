@@ -1,0 +1,177 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* رأس الصفحة */
+.header {
+    background-color: #3f3f3f;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    height: 60px;
+}
+.header h1 {
+    color: #fff !important; /* استخدام !important لضمان تطبيق اللون */
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* إضافة زر تسجيل الخروج */
+#logout-button {
+    background-color: #cc0000; /* لون أحمر للزر */
+    color: white;
+    padding: 5px 20px; /* تقليل الحجم العمودي والأفقي */
+    text-decoration: none;
+    border-radius: 4px; /* تقليل الزوايا */
+    font-size: 12px; /* تصغير حجم النص */
+    margin-left: 10px; /* تقليل المسافة بين الأزرار */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#logout-button:hover {
+    background-color: #990000; /* لون أغمق عند التمرير */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* المحتوى الرئيسي */
+.main-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.button-container .button {
+    margin-top: 90px;
+}
+
+.button {
+    background-color: #0066cc;
+    color: white;
+    padding: 30px 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 23px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #004d99;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* خيارات إضافية */
+.extra-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+
+.extra-option {
+    display: flex;
+    align-items: center;
+    color: #7d7d7d;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.extra-option:hover {
+    color: #333;
+    background-color: rgba(200, 200, 200, 0.2);
+    transform: translateY(-3px);
+}
+
+.arrow {
+    margin-right: 10px;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.extra-option:hover .arrow {
+    color: #333;
+}
+
+/* سيرة العيادة */
+.clinic-bio {
+    background-color: rgba(196, 194, 194, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clinic-bio h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.clinic-bio p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* تذييل الصفحة */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 400px;
+    text-align: right;
+}
+
+.footer-item {
+    width: 45%;
+}
+
+.footer-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.footer-item p {
+    font-size: 14px;
+    color: #838080;
+}
